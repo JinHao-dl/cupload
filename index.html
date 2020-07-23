@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="utf-8">
+		<title>cupload</title>
+	</head>
+	<body >
+		<p>上传头像</p>
+		<div id="cupload-create"></div>
+		<p>编辑</p>
+		<div id="cupload-update"></div>
+	</body>
+	<script src="static/js/cupload.js"></script>
+	<script type="text/javascript">
+		var cuploadCreate = new Cupload ({
+			ele: '#cupload-create',
+			num: 1,
+		});
+
+		var cuploadUpdate = new Cupload ({
+			ele	 : '#cupload-update',
+			num  : 1,
+			data : ["static/image/1.png", "static/image/2.png", "static/image/3.png"],
+		});
+	</script>
+</html>
+<style>
